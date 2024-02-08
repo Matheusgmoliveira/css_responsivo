@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #cccccc9c;
+}
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container,
+section .container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 16px ;
+    background-color: rgb(64, 131, 255);
+    color: #fff;
+    margin-bottom: 56px;
+    font-weight: bold;
+}
+
+section h2 {
+    color: rgb(64, 131, 255);
+    font-style: italic;
+    margin-bottom: 16px;
+    border-bottom: 1px solid rgb(64, 131, 255);
+    padding-bottom: 8px;
+}
+
+.container li {
+    list-style: none;
+    display: inline;
+    padding: 8px;
+}
+
+.produto a{
+    text-decoration: none;
+    color: black;
+    
+}.produto p{
+    font-size: 12px;
+    margin-bottom: 8px;
+    margin-right: 0;
+
+}
+
+.produto button{
+    padding: 6px;
+    border: none;
+    background-color: rgb(64, 131, 255);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.produto button:hover{
+    background-color: rgb(34, 112, 255);
+}
+
+
+section p {
+    margin-bottom: 16px;
+}
+
+.store-front{
+    margin-right: 32px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+
+@media screen and (max-width:767px){
+    .produto
+    .container{
+        max-width: 90%;
+    }
+        header .container,
+        section .container {
+            display: block;
+            
+            align-items: center;
+        }
+                .produtos {
+                    display: block;
+                
+
+                }
+                .produto{
+                    margin-bottom: 16px;
+                    padding-left: 65px;
+                }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .container{
+        max-width: 90%;
+    }
+    .produtos{
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+    }
+        .produto {
+            margin-bottom: 16px;
+        }
+}
